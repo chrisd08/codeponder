@@ -11,3 +11,4 @@ dist
 *.log
 storybook-static/
 .DS_Store
+.history

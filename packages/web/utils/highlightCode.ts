@@ -31,7 +31,7 @@ const addLineNumber = (
         nodes.push({ type: "text", value: lastLine });
       }
     } else {
-      if (node.type == "element" && node.children) {
+      if (node.type === "element" && node.children) {
         const result = addLineNumber(node.children, lineNum, false);
         node.children = result.nodes;
         lineNum = result.lineNum;
